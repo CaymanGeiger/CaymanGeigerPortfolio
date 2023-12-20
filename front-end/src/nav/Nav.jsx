@@ -35,13 +35,13 @@ export default function Nav() {
                         <div className='navLogoNameSmallDiv'>
                             <img
                                 className='navLogoNameSmall'
-                                src="CG1.png" />
+                                src="CG.png" />
                         </div>
                     )}
                     {width > 768 && (
                         <img
                             className='navLogoName'
-                            src="CG1.png" />
+                            src="CG.png" />
                     )}
                     </li>
                     {width > 768 && (
@@ -84,13 +84,17 @@ export default function Nav() {
                 </div>
                 <ul
                     className={navOpened ? 'wrapper' : 'wrapperClosed'}>
-                    <li className={`${'linkedin'} ${navOpened ? 'navIcon' : 'navIconClosed'}`}>
+                    <li
+                        onClick={() => window.open("https://www.linkedin.com/in/cayman-geiger-154548285/")}
+                        className={`${'linkedin'} ${navOpened ? 'navIcon' : 'navIconClosed'}`}>
                         <span className="tooltip">Linkedin</span>
                         <span>
                             <FontAwesomeIcon className='navIcons' icon={faLinkedin} />
                         </span>
                     </li>
-                    <li className={`${'gitlab'} ${navOpened ? 'navIcon' : 'navIconClosed'}`}>
+                    <li
+                        onClick={() => window.open("https://gitlab.com/caymangeiger")}
+                        className={`${'gitlab'} ${navOpened ? 'navIcon' : 'navIconClosed'}`}>
                         <span className="tooltip">Gitlab</span>
                         <span>
                             <FontAwesomeIcon className='navIcons' icon={faSquareGitlab} />

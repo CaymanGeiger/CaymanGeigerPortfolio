@@ -50,6 +50,16 @@ button {
     box-shadow: none;
 }
 
+.btn-5:hover span {
+    color: #ffffff;
+    background: transparent;
+    box-shadow: none;
+}
+
+.navigation span {
+    color: black;
+}
+
 .btn-5:before,
 .btn-5:after {
     content: '';
