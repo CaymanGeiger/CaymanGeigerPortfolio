@@ -27,38 +27,38 @@ export default function Nav() {
 
     return (
         <nav>
-                <ul className='navUl'>
-                    <li
-                        className='navLi'
-                    >
-                    {width < 768 && (
-                        <div className='navLogoNameSmallDiv'>
-                            <img
-                                className='navLogoNameSmall'
-                                src="CG.png" />
-                        </div>
-                    )}
-                    {width > 768 && (
+            <ul className='navUl'>
+                <li
+                    className='navLi'
+                >
+                {width < 768 && (
+                    <div className='navLogoNameSmallDiv'>
                         <img
-                            className='navLogoName'
+                            className='navLogoNameSmall'
                             src="CG.png" />
-                    )}
+                    </div>
+                )}
+                {width > 768 && (
+                    <img
+                        className='navLogoName'
+                        src="CG.png" />
+                )}
+                </li>
+                {width > 768 && (
+                    <li>
+                        <Navigation />
                     </li>
-                    {width > 768 && (
-                        <li>
-                            <Navigation />
-                        </li>
-                    )}
-                    <li
-                        onClick={handleClick}
-                        className={`nav-icon3 ${navOpened ? 'open' : ''}`}
-                    >
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </li>
-                </ul>
+                )}
+                <li
+                    onClick={handleClick}
+                    className={`nav-icon3 ${navOpened ? 'open' : ''}`}
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+            </ul>
             <div className={navClass}>
                 <ul className={navOpened ? 'navUlOpened' : 'navUlClosed'}>
                     <li className={navOpened ? 'navLiOpened' : 'navLiClosed'}>

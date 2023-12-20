@@ -104,14 +104,28 @@ export default function HomePage() {
                 <div className="homePageChildOne">
                     <div className="homePageChildOneDivOne">
                         <div className="homePageChildOneDivOneHeaderDiv1">
-                            <h1 className="homePageChildOneDivOneHeaderOne">
-                                Thank You For Your Interest
-                            </h1>
+                            <div className='homePageChildOneDivOneHeaderOneDiv'>
+                                <h1 className="homePageChildOneDivOneHeaderOne">
+                                    Thank You For Your Interest
+                                </h1>
+                            </div>
+                            <div className='homePageChildOneDivOneHeaderTwoDiv'>
+                                <div className='homePageChildOneDivOneHeaderTwoDivPhotoDiv'>
+                                    <div className='homePageChildOneDivOneHeaderTwoDivPhotoBackground'>
+                                    </div>
+                                    <img
+                                    className='homePageChildOneDivOneHeaderTwoDivPhoto'
+                                    src='Cayman1.png'/>
+                                </div>
+                                <h1 className='homePageChildOneDivOneHeaderTwoDiv'>
+                                    My name is Cayman Geiger
+                                </h1>
+                            </div>
                         </div>
                         <div className='homePageChildOneDivOneHeaderDiv2Parent'>
                             <div className="homePageChildOneDivOneHeaderDiv2">
                                 <h1 className="homePageChildOneDivOneHeaderTwo">
-                                    Get To Know Me!
+                                    Get To Know Me More!
                                 </h1>
                             </div>
                             <div class="scroll-indicator">
@@ -123,9 +137,6 @@ export default function HomePage() {
                                     icon={faAngleDown} />
                                 <FontAwesomeIcon
                                     class="dot" id="dot3"
-                                    icon={faAngleDown} />
-                                <FontAwesomeIcon
-                                    class="dot" id="dot4"
                                     icon={faAngleDown} />
                             </div>
                         </div>
